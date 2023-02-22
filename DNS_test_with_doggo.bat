@@ -2,7 +2,7 @@
 for /f "tokens=*" %%a in (DNS.txt) do (
     echo/
     echo @%%a
-    doggo baidu.com --time @%%a
+    doggo baidu.com --time --timeout 1 @%%a
     echo/
 )
 
